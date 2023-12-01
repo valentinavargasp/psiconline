@@ -19,11 +19,14 @@
 <body>
 <!--ENCABEZADO DE NUESTRO SITIO-->
     <header id="header">
+        <a href="#"><img src="images/logo blanco.png" alt="logo"></a>
+        <input type="checkbox" id="check">
+        <label for="checkbox" class="checkbtn"><i class="fa-solid fa-bars" style="color: #ffffff;"></i></label>
         <!--MENU NAV-->
         <nav class="navBar">
-                    <a href="#"><img src="images/logo blanco.png" alt="logo"></a>
-                    <ul>
-                        <li><a href="#">Inicio</a></li>
+            <button class="cerrar">cerrar</button>
+                    <ul class="navList">
+                        <li><a class="active" "#">Inicio</a></li>
                         <li><a href="pages/quienessomos.html">Quienes somos</a></li>
                         <li><a href="pages/equipo.html">Nuestro Equipo</a></li>
                         <li><a href="pages/servicios.html">Servicios</a></li>
@@ -35,16 +38,17 @@
 <!--CONTENIDO DE TODO NUESTRO SITIO-->
     <main id="main">
         <section id="banner">
-            <article class="banner__image">
-                <img src="images/portada.png" alt="portadapng">
-            </article>
-            <article class="banner__textoportada">
+                        <article class="banner__textoportada">
                 <h1>Psiconline</h1>
                 <p>Te invitamos a explorar nuestros servicios, conocer a nuestro equipo de profesionales y dar el primer paso hacia una vida más equilibrada y satisfactoria. Estamos aquí para ayudarte a afrontar tus desafíos emocionales y descubrir tu potencial para el crecimiento y la curación.</p>
                 <div class="bannerBoton">
                     <a href="pages/turnos.html">Quiero empezar!</a>
                 </div>
             </article>
+            <article class="banner__image">
+                <img src="images/portada.png" alt="portadapng">
+            </article>
+
             </section>
 
 <section id="testimonios">
@@ -70,9 +74,10 @@
     </article>
 
     <article class="turnos__cuadros">
-        <article class="inmediato estiloArt">
-            <h3>Turnos inmediatos <h3>
-            </article>
+            <article class="inmediato estiloArt">
+                <h3>Turnos inmediatos <h3>
+                </article>
+        </div>
             <article class="ubicacion estiloArt">
                 <h3>Desde donde estés</h3>
             </article>
