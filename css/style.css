@@ -24,19 +24,6 @@ main {
   min-height: 100vh;
 }
 
-@media (max-width: 768px) {
-  .footer__redes img {
-    width: 20px;
-    height: 20px;
-  }
-  .banner__textoportada h1 {
-    font-size: 20px;
-    text-align: center;
-  }
-  .banner__textoportada p {
-    font-size: 15px;
-  }
-}
 /*ESTILOS HEADER*/
 .navbar {
   background-color: rgb(184, 160, 255);
@@ -81,8 +68,8 @@ main {
 
 .footer__redes img {
   padding: 4px;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   margin: 5px;
 }
 
@@ -114,13 +101,13 @@ main {
   height: 60px;
   background-color: rgb(184, 160, 255);
   border-radius: 20px;
-  margin: 50px auto;
+  margin: auto;
+  text-align: center;
 }
 
 .bannerBoton a {
   color: white;
   font-size: 15px;
-  font-weight: 500;
 }
 
 #testimonios {
@@ -128,16 +115,25 @@ main {
   flex-direction: row;
   justify-content: space-around;
   text-align: center;
+  margin-top: 50px;
   margin-bottom: 50px;
 }
 
-#testimonios .testimonios__pacientes, .testimonios__equipo {
+.testimonios__pacientes, .testimonios__equipo {
   width: 30%;
   height: 40%;
   background-color: whitesmoke;
   overflow: auto; /*AJUSTE DE CONTENIDO CON RESPECTO AL TAMAÑO DE CAJA*/
   padding: 10px; /*ESPACIO INTERIOR*/
   border-radius: 35px;
+}
+
+#testimonios h2 {
+  font-size: 30px;
+}
+
+#testimonios p {
+  font-size: 20px;
 }
 
 #turnos {
@@ -149,10 +145,16 @@ main {
   flex-direction: column;
 }
 
-.turnos__textos h2, a {
+.turnos__textos h2 {
   display: flex;
   justify-content: center;
   text-align: center;
+  font-size: 30px;
+}
+
+.turnos__textos a {
+  font-size: 20px;
+  color: white;
 }
 
 .turnos__cuadros {
@@ -160,7 +162,7 @@ main {
   justify-content: space-around;
   text-align: center;
   gap: 10px;
-  margin-top: 10px;
+  margin-top: 50px;
   flex-wrap: wrap;
 }
 
@@ -209,7 +211,7 @@ main {
 
 .mainEquipo {
   min-height: 100vh;
-  background-color: rgba(159, 129, 248, 0.671);
+  background-image: linear-gradient(to top, #ebc0fd 0%, #d9ded8 100%);
 }
 
 .profesionalesApartado {
@@ -316,6 +318,126 @@ main {
   height: 400px;
   margin-top: 30px;
   font-size: 20px;
+}
+
+/*RESPONSIVE 926 PX*/
+@media (max-width: 926px) {
+  .footer__redes img {
+    padding: 4px;
+    width: 35px;
+    height: 35px;
+    margin: 5px;
+  }
+  .footer__redes {
+    display: flex;
+    flex-direction: row;
+  }
+}
+/*RESPONSIVE 768 PX*/
+@media (max-width: 768px) {
+  .container-fluid img {
+    width: 80px;
+  }
+  .footer__redes img {
+    padding: 4px;
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+  }
+  .footer__redes {
+    display: flex;
+    flex-direction: row;
+  }
+  .banner__textoportada h1 {
+    font-size: 20px;
+    text-align: center;
+  }
+  .banner__textoportada p {
+    font-size: 15px;
+  }
+  #banner .bannerBoton {
+    width: 80px;
+    height: 30px;
+    background-color: rgb(184, 160, 255);
+    border-radius: 20px;
+    margin-top: 10px;
+  }
+  .bannerBoton a {
+    color: white;
+    font-size: 10px;
+  }
+  #testimonios {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .testimonios__pacientes, .testimonios__equipo {
+    width: 45%;
+    height: 50%;
+    background-color: whitesmoke;
+    border-radius: 35px;
+  }
+  #testimonios h2 {
+    font-size: 20px;
+  }
+  #testimonios p {
+    font-size: 15px;
+  }
+  .turnos__textos h2 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 20px;
+  }
+  .turnos__textos a {
+    font-size: 15px;
+    color: white;
+  }
+}
+/*RESPONSIVE 480 PX*/
+@media (max-width: 480px) {
+  .footer__redes img {
+    padding: 4px;
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+  }
+  .footer__redes {
+    display: flex;
+    flex-direction: row;
+  }
+  .banner__textoportada h1 {
+    font-size: 15px;
+    text-align: center;
+  }
+  .banner__textoportada p {
+    font-size: 10px;
+  }
+  #banner .bannerBoton {
+    width: 80px;
+    height: 30px;
+    background-color: rgb(184, 160, 255);
+    border-radius: 20px;
+    margin-top: 5px;
+  }
+  .bannerBoton a {
+    color: white;
+    font-size: 10px;
+  }
+  #testimonios {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .testimonios__pacientes, .testimonios__equipo {
+    width: 45%;
+    height: 50%;
+    background-color: whitesmoke;
+    border-radius: 35px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
