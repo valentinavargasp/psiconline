@@ -274,30 +274,36 @@ main {
 
 /*ESTILOS SERVICIOS*/
 #servicios {
-  padding: 20px 0;
   display: flex;
   justify-content: center;
-  flex-direction: column;
   text-align: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
 }
 
 #servicios h1 {
-  font-size: 30px;
+  font-size: 25px;
 }
 
 #servicios h2 {
   font-size: 20px;
 }
 
-#servicios .serviciosCajas {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+.serviciosCajas {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px 32px;
+  margin-bottom: 20px;
+}
+
+.serviciosCajas h3 {
+  font-size: 20px;
 }
 
 #servicios img {
-  width: 500px;
-  height: 500px;
+  width: 450px;
+  height: 450px;
   border-radius: 50px;
 }
 
@@ -332,6 +338,11 @@ main {
   .footer__redes {
     display: flex;
     flex-direction: row;
+  }
+  #servicios img {
+    width: 400px;
+    height: 400px;
+    border-radius: 50px;
   }
 }
 /*RESPONSIVE 768 PX*/
@@ -393,6 +404,26 @@ main {
     font-size: 15px;
     color: white;
   }
+  #servicios h1 {
+    font-size: 20px;
+  }
+  #servicios h2 {
+    font-size: 18px;
+  }
+  .serviciosCajas {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px 32px;
+    margin-bottom: 20px;
+  }
+  .serviciosCajas h3 {
+    font-size: 18px;
+  }
+  #servicios img {
+    width: 400px;
+    height: 400px;
+    border-radius: 50px;
+  }
 }
 /*RESPONSIVE 480 PX*/
 @media (max-width: 480px) {
@@ -427,6 +458,20 @@ main {
     width: 350px;
     height: 400px;
     border-radius: 35px;
+  }
+  #servicios h1 {
+    font-size: 18px;
+  }
+  #servicios h2 {
+    font-size: 15px;
+  }
+  .serviciosCajas h3 {
+    font-size: 15px;
+  }
+  #servicios img {
+    width: 350px;
+    height: 350px;
+    border-radius: 50px;
   }
 }
 
