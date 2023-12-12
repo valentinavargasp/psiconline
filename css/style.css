@@ -76,20 +76,29 @@ main {
 
 /*ESTILOS DEL BODY INDEX*/
 #banner {
-  width: 100%;
-  height: auto;
+  width: 100vw;
+  height: 100%;
   display: flex;
   justify-content: center;
+  align-items: center;
   padding: 10px;
-}
-
-#banner img {
-  width: 600px;
+  margin-top: 0;
 }
 
 .banner__textoportada h1 {
   font-size: 25px;
   text-align: center;
+}
+
+video {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.banner__textoportada {
+  position: absolute;
 }
 
 .banner__textoportada p {
@@ -110,11 +119,15 @@ main {
   font-size: 15px;
 }
 
+.tittleComunidad h2 {
+  font-size: 25px;
+  margin-top: 50px;
+}
+
 #testimonios {
   display: flex;
   justify-content: center;
   text-align: center;
-  align-items: center;
   margin-top: 50px;
   margin-bottom: 50px;
   gap: 50px;
@@ -294,11 +307,41 @@ main {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 16px 32px;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
 }
 
 .serviciosCajas h3 {
   font-size: 20px;
+}
+
+.serviciosAdolescentes {
+  background-color: rgb(175, 200, 173);
+  border-radius: 50px;
+}
+
+.serviciosAdultos {
+  background-color: rgb(175, 200, 173);
+  border-radius: 50px;
+}
+
+.serviciosNiños {
+  background-color: rgb(175, 200, 173);
+  border-radius: 50px;
+}
+
+.serviciosVocacional {
+  background-color: rgb(175, 200, 173);
+  border-radius: 50px;
+}
+
+.serviciosParejas {
+  background-color: rgb(175, 200, 173);
+  border-radius: 50px;
+}
+
+.serviciosPsicope {
+  background-color: rgb(175, 200, 173);
+  border-radius: 50px;
 }
 
 #servicios img {
