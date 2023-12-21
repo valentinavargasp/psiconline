@@ -1,0 +1,24 @@
+/*RESET DEL INDEX*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Sora';
+
+}
+
+a,
+li {
+    font-style: none;
+    text-decoration: none;
+    display: inline-block;
+}
+body {
+    max-width: 1440px;
+    margin: 0 auto;
+    background-color: rgb(242, 241, 235);
+}
+main {
+    min-height: 100vh;
+    min-width: 100vw;
+}

@@ -1,0 +1,115 @@
+/*ESTILOS SERVICIOS*/
+#servicios {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+#servicios h1 {
+    font-size: 25px;
+}
+#servicios h2 {
+    font-size: 20px;
+}
+
+.serviciosCajas {
+    display: grid;
+    grid-template-columns:  1fr 1fr;
+    gap: 20px 40px;
+    margin-bottom: 50px;
+}
+.serviciosCajas h3 {
+    font-size: 20px;
+}
+.boxShadow:hover {
+    box-shadow: 10px 10px rgba(0, 0, 0, 0.628);
+    transition: 1s;
+    transform: translate(1,1);
+}
+
+.serviciosAdolescentes {
+background-color: rgb(175, 200, 173);
+border-radius: 50px;
+}
+.serviciosAdultos {
+    background-color: rgb(175, 200, 173);
+    border-radius: 50px;
+    }
+
+.serviciosNiños {
+    background-color: rgb(175, 200, 173);
+    border-radius: 50px;
+}
+.serviciosVocacional {
+    background-color: rgb(175, 200, 173);
+    border-radius: 50px;
+    }
+
+.serviciosParejas {
+        background-color: rgb(175, 200, 173);
+        border-radius: 50px;
+        }
+        .serviciosPsicope {
+            background-color: rgb(175, 200, 173);
+            border-radius: 50px;
+            }
+
+    #servicios img {
+    width: 450px;
+    height: 450px;
+    border-radius: 50px;
+}
+/*RESPONSIVE 926 PX*/
+@media (max-width: 926px) {
+    #servicios img {
+    width: 400px;
+    height: 400px;
+    border-radius: 50px;
+}
+}
+/*RESPONSIVE 768 PX*/
+@media (max-width: 768px) {
+    #servicios h1 {
+        font-size: 20px;}
+        #servicios h2 {
+        font-size: 18px;
+        }
+
+    .serviciosCajas {
+        display: grid;
+        grid-template-columns:  1fr;
+        gap: 16px 32px;
+        margin-bottom: 20px;
+        }
+    .serviciosCajas h3 {
+        font-size: 18px;
+        }
+        
+    #servicios img {
+        width: 400px;
+        height: 400px;
+        border-radius: 50px;
+        }
+    }
+/*RESPONSIVE 480 PX*/
+@media (max-width: 480px) {
+    #servicios h1 {
+        font-size: 18px;
+    }
+    #servicios h2 {
+        font-size: 15px;
+    }
+    
+    .serviciosCajas h3 {
+        font-size: 15px;
+    }
+    
+        #servicios img {
+        width: 350px;
+        height: 350px;
+        border-radius: 50px;
+    }
+}

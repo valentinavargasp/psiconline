@@ -1,0 +1,74 @@
+/*ESTILOS MAIN TURNOS*/
+#encabezadoTurnos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.estiloTurno {
+    text-align: center;
+    width: 100%;
+    font-size: 20px;
+}
+#encabezadoTurnos h1 {
+    font-size: 25px;
+}
+
+#encabezadoTurnos p, ul, li {
+    text-justify: auto;
+    font-size: 20px;
+}
+
+.formTurnos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    font-size: 20px;
+    width: 40%;
+    height: 50%;
+    background-color: rgb(175, 200, 173);
+    padding: 30px;
+    margin-bottom: 50px;
+    border-radius: 20px;
+}
+/*RESPONSIVE 926 PX*/
+@media (max-width: 926px) {
+    .formTurnos {
+        margin-top: 30px;
+        font-size: 15px;
+        width: 40%;
+        height: 50%;
+        padding: 20px;
+    }
+}
+/*RESPONSIVE 768 PX*/
+@media (max-width: 768px) {
+    .formTurnos {
+        margin-top: 30px;
+        font-size: 15px;
+        width: 60%;
+        height: 70%;
+        padding: 20px;
+        }
+    #encabezadoTurnos h1 {
+        font-size: 20px;
+        }
+
+    #encabezadoTurnos p, ul, li {
+        font-size: 18px;
+        }
+}
+/*RESPONSIVE 480 PX*/
+@media (max-width: 480px) {
+    #encabezadoTurnos {
+        gap: 20px;
+    }
+    .formTurnos {
+        margin-top: 30px;
+        font-size: 15px;
+        width: 80%;
+        height: 90%;
+        padding: 20px;
+    }
+}

@@ -1,0 +1,17 @@
+/*ESTILOS HEADER*/
+.navbar {
+    background-color: rgb(136, 171, 142);
+}
+.container-fluid img {
+width: 100px;
+}
+#navbarNav ul li a{
+    color: white;
+    font-size: 25px;
+}
+/*RESPONSIVE 768 PX*/
+@media (max-width: 768px) {
+    .container-fluid img {
+        width: 80px;
+        }
+    }
