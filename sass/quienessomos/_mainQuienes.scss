@@ -1,6 +1,11 @@
 /*ESTILOS MAIN QUIENES SOMOS*/
 #textoQuienesSomos {
-    margin-top: 40px
+    margin-top: 40px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 20px;
 }
 #textoQuienesSomos h1, ul, p {
     text-align: center;

@@ -10,9 +10,11 @@
 .mainEquipo {
     display: flex;
     flex-direction: column;
+    margin-top: 20px;
 }
 .texto__profesionales {
-    margin-top: 40px;
+    width: 80%;
+    margin: auto;
 }
 .texto__profesionales h1, h2 {
     justify-content: center;
@@ -30,6 +32,13 @@
 }
 #formEquipo p {
     font-size: 25px;
+}
+
+#formEquipo input {
+    margin-bottom: 5px;
+}
+.form-select {
+    width: 50%;
 }
 
 
